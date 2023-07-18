@@ -1,0 +1,30 @@
+{
+  "name": "hack.chat-v2",
+  "version": "2.1.93",
+  "description": "a minimal distraction free chat application",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hack-chat/main.git"
+  },
+  "engines": {
+    "node": ">= 10.15.1",
+    "npm": ">= 6.7.0"
+  },
+  "scripts": {
+    "start": "pm2 startOrReload pm2.config.js",
+    "stop": "pm2 stop pm2.config.js && pm2 delete pm2.config.js",
+    "logs": "pm2 logs",
+    "clear": "pm2 flush",
+    "status": "pm2 list",
+    "refresh": "pm2 flush && pm2 stop pm2.config.js && pm2 delete pm2.config.js",
+    "postinstall": "cd ./server && npm install && npm run config"
+  },
+  "author": "Marzavec",
+  "license": "WTFPL",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "http-server": "^0.12.1",
+    "pm2": "^5.2.0"
+  }
+}
