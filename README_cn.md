@@ -12,4 +12,4 @@ ETC，全称ETO Chat，是小说《三体》的同人网站应用。
 - wussheng233:提供giwu平台
 - 质子:修改前端
 - 你好:Proton技术支持
-- ThePiationESL,23:修复后端的BUG代码
+- 一只学渣,23:修复后端的BUG代码
