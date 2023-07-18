@@ -11,6 +11,6 @@ Website: http://chat.esoela.rr.nu/
 Thanks to all the Staffs.  
 - Hack-Chat developer: Provides low-level code support
 - wusheng233: provides the Gitwu platform
-- Proton: Modify the front end
-- Hello: Technical support for Proton
+- zhizi: Modify the front end
+- NIHAO: Technical support for Proton
 - ThePiationESL: Fix BUG code with the back end
