@@ -11,7 +11,7 @@
 const Questions = {
   properties: {
     tripSalt: {
-      description: '识别码 (留空默认或者随机生成)',
+      description: 'Salt (留空默认或者随机生成)',
       type: 'string',
       hidden: true,
       replace: '*',
@@ -25,7 +25,7 @@ const Questions = {
       description: '管理员用户名',
       pattern: /^"?[a-zA-Z0-9_]+"?$/,
       type: 'string',
-      message: '随便写，但只能是字母或数字',
+      message: '只能是字母与数字的组合.',
       before: (value) => value.replace(/"/g, ''),
     },
 
