@@ -79,6 +79,7 @@ class RateLimiter {
 
     record.score *= Math.pow(2, -(Date.now() - record.time) / this.halflife);
     record.score += deltaScore;
+    record.score += 2; // 限制聊天速度
     record.time = Date.now();
 
     if (record.score >= this.threshold) {

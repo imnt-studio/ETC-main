@@ -20,9 +20,9 @@ console.log(stripIndents`
   ${chalk.white('温馨提示:')} ${chalk.green('npm/yarn run config')} 可以重新运行此向导。
 
   你现在要回答下列问题:
-  -  ${chalk.magenta('      识别码')}, 用户名旁边的那组乱码，美名其曰保证密码安全
-  -  ${chalk.magenta('管理员用户名')}, 这东西放在这当摆设，其实这个可以随便填
-  -  ${chalk.magenta('管理员密码')}, 这个你可要认真填了，否则待会没权限别找我
-  -  ${chalk.magenta('      端口')}, WebSocket端口，HTTP不是在这里改，这是服务端安装程序啊!
+  -  ${chalk.magenta('      Salt')}, 防止密码被暴力破解.
+  -  ${chalk.magenta('管理员用户名')}, 管理员的用户名.
+  -  ${chalk.magenta('管理员密码')}, 在您作为管理员登陆时所需要的密码.
+  -  ${chalk.magenta('      端口')}, WebSocket通讯端口.
   \u200b
 `);
