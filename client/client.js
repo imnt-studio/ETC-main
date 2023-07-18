@@ -5,6 +5,7 @@
  * soon. As a result of this, the current code has been deprecated
  * and will not actively be updated.
  *
+ * ETChat Version 0.1.0 Beta.
 */
 
 //select "chatinput" on "/"
@@ -118,10 +119,8 @@ var verifyNickname = function (nick) {
 var frontpage = [
 	"# ETO_Chat",
 	"----",
-		"质子创建的公共频道: ?SBMrZhang",
-		"PiationMaster的公共频道; ?new",
-		"你好创建的公开频道: ?chat",
-		"随机房间（只有你自己）: ?" + Math.random().toString(36).substr(2, 8),
+		"公开频道: ?chat, ?SBMrZhang, ?new",
+		"随机房间（只有您自己）: ?" + Math.random().toString(36).substr(2, 8),
 		"----",
 		"### 项目的由来",
 		"由于MrZhang265等人禁止我们使用任何Zhang系列产品，",
@@ -130,16 +129,16 @@ var frontpage = [
 		"还有ThePiationESL的修改代码支持,",
 		"这个项目就诞生了",
 		"----",
-		"### 特别感谢",
-		"Hack-Chat开发人员:提供底层代码支持",
+		"### 感谢:",
 		"wusheng233:提供[Gitwu平台](https://gitwu.iuqaq.com)",
 		"质子：修改前端",
 		"你好：对质子提供技术支持",
-		"ThePiationESL:修改BUG代码&&后端",
+		"ThePiationESL / 23:修改BUG代码&&后端",
+		"Hack-Chat开发人员:提供底层代码支持",
 		"~~MrZhang365以及他的团队：负责催更~~",
 		"----",
 		"ETO_Studio",
-		"2023.06.30"
+		"2023.07.18"
 ].join("\n");
 
 function $(query) {
@@ -321,7 +320,7 @@ function join(channel) {
 			if (location.hash) {
 				myNick = location.hash.substr(1);
 			} else {
-				var newNick = prompt('Nickname:', myNick);
+				var newNick = prompt('昵称:', myNick);
 				if (newNick !== null) {
 					myNick = newNick;
 				} else {
@@ -341,7 +340,7 @@ function join(channel) {
 
 	ws.onclose = function () {
 		if (wasConnected) {
-			pushMessage({ nick: '!', text: "Server disconnected. Attempting to reconnect. . ." });
+			pushMessage({ nick: '!', text: "断开与服务器的 WebSocket 连接,正在尝试重连..." });
 		}
 
 		window.setTimeout(function () {
@@ -384,7 +383,7 @@ var COMMANDS = {
 			userAdd(nick);
 		});
 
-		pushMessage({ nick: '*', text: "Users online: " + nicks.join(", ") })
+		pushMessage({ nick: '*', text: "在线用户: " + nicks.join(", ") })
 	},
 
 	onlineAdd: function (args) {
@@ -393,7 +392,7 @@ var COMMANDS = {
 		userAdd(nick);
 
 		if ($('#joined-left').checked) {
-			pushMessage({ nick: '*', text: nick + " joined" });
+			pushMessage({ nick: '*', text: nick + " 加入了聊天室" });
 		}
 	},
 
@@ -403,7 +402,7 @@ var COMMANDS = {
 		userRemove(nick);
 
 		if ($('#joined-left').checked) {
-			pushMessage({ nick: '*', text: nick + " left" });
+			pushMessage({ nick: '*', text: nick + " 退出了聊天室" });
 		}
 	}
 }
@@ -528,9 +527,9 @@ function updateTitle() {
 
 	var title;
 	if (myChannel) {
-		title = "?" + myChannel;
+		title = "ETO Chat - " + myChannel;
 	} else {
-		title = "hack.chat";
+		title = "ETO Chat";
 	}
 
 	if (unread > 0) {
