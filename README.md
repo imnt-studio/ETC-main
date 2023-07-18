@@ -1,4 +1,5 @@
 # ETC-main
+[简体中文](README_cn.md)  English
 ![badge](https://img.shields.io/badge/Server-NodeJS-Grenn)
 ![badge](https://img.shields.io/badge/Powered_by-Hack.Chat-Grenn)  
 *A lightweight, out-of-the-box anonymous chat room.*  
