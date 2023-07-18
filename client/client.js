@@ -298,7 +298,7 @@ function notify(args) {
 }
 
 function join(channel) {
-	if (document.domain == 'chat.esoela.rr.nu' || document.domain == 'nihao.imnt.or.td' || document.domain == 'chat.imnt.evai.pl') {
+	if (document.domain == 'chat.esoela.rr.nu' || document.domain == 'nihao.imnt.or.td' || document.domain == 'chat.imnt.evai.pl' || document.domain == 'etc.imesl.eu.org') {
 		// 当域名为ETO-Chat官方域名时，用下面的ws地址
 		ws = new WebSocket('wss://ecws.imesl.eu.org/');
 	} else {
