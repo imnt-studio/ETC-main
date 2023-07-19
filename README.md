@@ -10,7 +10,6 @@ Website: https://etc.imesl.eu.org/
 # Thank:  
 Thanks to all the Staffs.  
 - Hack-Chat developer: Provides low-level code support
-- wusheng233: provides the Gitwu platform
 - zhizi: Modify the front end
 - NIHAO: Technical support for zhizi
 - ThePiationESL: Fix BUG code with the back end
