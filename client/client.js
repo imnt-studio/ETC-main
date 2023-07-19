@@ -133,7 +133,7 @@ var frontpage = [
 		"wusheng233:提供[Gitwu平台](https://gitwu.iuqaq.com)",
 		"质子：修改前端",
 		"你好：对质子提供技术支持",
-		"ThePiationESL / 23:修改BUG代码&&后端",
+		"一只学渣 / 23:修改BUG代码&&后端",
 		"Hack-Chat开发人员:提供底层代码支持",
 		"~~MrZhang365以及他的团队：负责催更~~",
 		"----",

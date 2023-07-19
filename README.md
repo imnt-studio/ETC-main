@@ -5,7 +5,7 @@
 *A lightweight, out-of-the-box anonymous chat room.*  
 ETC, full name ETO Chat is a fan website application for the novel The Three-Body Problem.  
 This is an anonymous chat room, you do not need to register and you are guaranteed that no information about you will be retained.  
-Website: http://chat.esoela.rr.nu/  
+Website: https://etc.imesl.eu.org/
   
 # Thank:  
 Thanks to all the Staffs.  
