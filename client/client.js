@@ -119,7 +119,7 @@ var verifyNickname = function (nick) {
 var frontpage = [
 	"# ETO_Chat",
 	"----",
-		"公开频道: ?chat, ?SBMrZhang, ?new",
+		"公开频道: ?chat, ?awa, ?new",
 		"随机房间（只有您自己）: ?" + Math.random().toString(36).substr(2, 8),
 		"----",
 		"### 项目的由来",
