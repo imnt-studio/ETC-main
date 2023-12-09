@@ -1,0 +1,71 @@
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: linear-gradient(to right, #000, #222, #444, #222, #000);
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  border: 2px solid #0f0;
+  box-shadow: 0 0 10px #0f0;
+}
+
+.hljs-strong,
+.hljs-emphasis {
+  color: #0ff;
+}
+
+.hljs-bullet,
+.hljs-quote,
+.hljs-link,
+.hljs-number,
+.hljs-regexp,
+.hljs-literal {
+  color: #f0f;
+}
+
+.hljs-code,
+.hljs-selector-class {
+  color: #f00;
+}
+
+.hljs-emphasis {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-section,
+.hljs-attribute,
+.hljs-name,
+.hljs-variable {
+  color: #0f0;
+}
+
+.hljs-params {
+  color: #fff;
+}
+
+.hljs-string {
+  color: #ff0;
+}
+
+.hljs-subst,
+.hljs-type,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-symbol,
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-addition {
+  color: #0ff;
+}
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+  color: #888;
+}
